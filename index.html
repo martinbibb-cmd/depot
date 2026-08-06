@@ -1,1 +1,24 @@
-<!doctype html><meta charset="utf-8"><title>Depot</title><h1>Depot</h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#173f8b" />
+    <title>Depot Workflow Demo</title>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./icons/icon-192.svg" />
+    <link rel="apple-touch-icon" href="./icons/icon-192.svg" />
+  </head>
+  <body>
+    <div class="demo-banner">Prototype-only: local fixtures + mock Breeze adapter, no production write.</div>
+    <button id="install-prompt" class="secondary" hidden>Install Depot Demo</button>
+    <div id="app"></div>
+
+    <template id="marker-template">
+      <div class="marker" data-type="boiler"></div>
+    </template>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
