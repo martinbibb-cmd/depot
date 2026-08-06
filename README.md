@@ -4,12 +4,13 @@ A runnable interactive web prototype for the requested Depot workflow refactor.
 
 ## GitHub Pages PWA publish
 
-This repository is configured with a GitHub Actions workflow that publishes this demo directly to GitHub Pages.
+This repository uses a GitHub Actions workflow to publish the app to GitHub Pages from the `main` branch.
 
-1. Push updates to `main` (or `master`).
-2. In GitHub, open **Settings → Pages** and set Source to **GitHub Actions**.
-3. In the Actions tab, confirm workflow `deploy-github-pages` completed successfully.
-4. Open the published Pages URL and use the app there (iPad Safari/Chrome recommended).
+- Push updates to `main` (or `master`).
+- Watch the `deploy-github-pages` workflow in Actions and the Pages build/deploy status on the repo.
+- Open the published Pages URL to use the running app.
+
+If a run is stuck in `waiting` before any job starts, check the GitHub Pages deployment and environment protection/approval state in GitHub, since that prevents the job from progressing.
 
 The app is served as a PWA with:
 - `manifest.webmanifest`
