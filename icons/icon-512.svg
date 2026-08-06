@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Depot demo icon">
+  <defs>
+    <linearGradient id="g2" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#173f8b"/>
+      <stop offset="100%" stop-color="#0d9ac5"/>
+    </linearGradient>
+  </defs>
+  <rect x="24" y="24" width="464" height="464" rx="96" fill="url(#g2)"/>
+  <rect x="130" y="126" width="190" height="260" rx="22" fill="#dce7ff"/>
+  <path d="M130 126h190" stroke="#ffffff" stroke-width="20" stroke-linecap="round"/>
+  <circle cx="190" cy="182" r="50" fill="#ffffff"/>
+  <rect x="280" y="170" width="80" height="150" rx="14" fill="#f0f5ff"/>
+  <path d="M120 386h272a20 20 0 010 40H120a20 20 0 010-40" fill="#ffffff"/>
+</svg>
