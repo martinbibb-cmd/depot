@@ -1,0 +1,11 @@
+name: pages-health-check
+on:
+  push:
+    branches:
+      - main
+      - master
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "health"
