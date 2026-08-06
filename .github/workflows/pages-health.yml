@@ -1,11 +1,14 @@
 name: pages-health-check
+
 on:
-  push:
-    branches:
-      - main
-      - master
+  workflow_run:
+    workflows: [deploy-github-pages]
+    types:
+      - completed
+
 jobs:
   ping:
     runs-on: ubuntu-latest
+    if: github.event.workflow_run.conclusion == 'success'
     steps:
-      - run: echo "health"
+      - run: echo "Deployment healthy"
